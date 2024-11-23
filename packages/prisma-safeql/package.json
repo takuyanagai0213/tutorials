@@ -1,0 +1,20 @@
+{
+  "name": "@repo/prisma-safeql",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "migrate:dev": "prisma migrate dev"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@ts-safeql/eslint-plugin": "^3.4.7",
+    "@types/node": "^22.9.3",
+    "libpg-query": "^16.3.0",
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "npx": "^10.2.2",
+    "prisma": "^5.22.0"
+  }
+}
