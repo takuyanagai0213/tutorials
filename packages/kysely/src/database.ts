@@ -3,16 +3,17 @@ import {Pool} from "pg";
 
 import {Kysely, PostgresDialect} from "kysely";
 
-const dialect = new PostgresDialect({
+export const dialect = new PostgresDialect({
   pool: new Pool({
+    host: 'localhost',
     database: 'my_database',
     user: 'postgres',
-    password: 'password',
-    port: 5432,
+    password: 'postgres',
+    port: 5431,
     max: 10,
   }),
 })
 
 export const db = new Kysely<Database>({
-  dialect: new PostgresDialect(pool),
+  dialect,
 })
