@@ -1,8 +1,9 @@
 {
-  "name": "@repo/prisma",
+  "name": "@repo/prisma-kysely",
   "scripts": {
     "dev": "tsc --watch",
-    "build": "tsc"
+    "build": "tsc",
+    "migrate:dev": "prisma migrate dev"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
@@ -11,6 +12,7 @@
   },
   "dependencies": {
     "npx": "^10.2.2",
-    "prisma": "^5.22.0"
+    "prisma": "^5.22.0",
+    "prisma-kysely": "^1.8.0"
   }
 }
