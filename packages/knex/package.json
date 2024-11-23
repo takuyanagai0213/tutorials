@@ -1,0 +1,22 @@
+{
+  "name": "@repo/knex",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "exports": {
+    "./knex": {
+      "types": "./src/knex.ts",
+      "default": "./dist/knex.js"
+    }
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7",
+    "tsx": "^4.19.2"
+  }
+}
