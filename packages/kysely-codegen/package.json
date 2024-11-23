@@ -12,12 +12,12 @@
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
+    "kysely-codegen": "^0.17.0",
     "typescript": "latest"
   },
   "dependencies": {
-    "knex": "^3.1.0",
     "kysely": "^0.27.4",
-    "sqlite3": "^5.1.7",
+    "pg": "^8.13.1",
     "tsx": "^4.19.2"
   }
 }
