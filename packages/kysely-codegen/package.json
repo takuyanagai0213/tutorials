@@ -2,7 +2,8 @@
   "name": "@repo/kysely-codegen",
   "scripts": {
     "dev": "tsc --watch",
-    "build": "tsc"
+    "build": "tsc",
+    "generate": "kysely-codegen"
   },
   "exports": {
     "./knex": {

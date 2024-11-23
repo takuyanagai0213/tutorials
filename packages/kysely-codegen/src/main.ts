@@ -28,7 +28,6 @@ const main = async () => {
 
   const users = await getUsers();
   console.log(users);
-
 }
 
 main();
