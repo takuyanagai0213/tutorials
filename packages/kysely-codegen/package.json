@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
+    "@types/pg": "^8.11.10",
     "kysely-codegen": "^0.17.0",
     "typescript": "latest"
   },
