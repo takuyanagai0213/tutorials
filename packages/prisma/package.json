@@ -1,0 +1,16 @@
+{
+  "name": "@repo/prisma",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^22.9.3",
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "npx": "^10.2.2",
+    "prisma": "^5.22.0"
+  }
+}

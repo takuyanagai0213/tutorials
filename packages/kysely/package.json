@@ -1,0 +1,23 @@
+{
+  "name": "@repo/kysely",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "exports": {
+    "./src": {
+      "types": "./src/main.ts",
+      "default": "./dist/knex.js"
+    }
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/pg": "^8.11.10",
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "kysely": "^0.27.4",
+    "pg": "^8.13.1",
+    "tsx": "^4.19.2"
+  }
+}
