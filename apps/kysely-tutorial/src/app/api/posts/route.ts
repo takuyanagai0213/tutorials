@@ -6,7 +6,7 @@ export const runtime = 'nodejs';
 
 export const GET = async () => {
   const posts = await db
-    .selectFrom("posts_table")
+    .selectFrom("Post")
     .selectAll()
     .execute();
 

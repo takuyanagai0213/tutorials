@@ -11,28 +11,40 @@ export type Generated<T> = T extends ColumnType<infer S, infer I, infer U>
 
 export type Int8 = ColumnType<string, bigint | number | string, bigint | number | string>;
 
+export type Timestamp = ColumnType<Date, Date | string, Date | string>;
+
+export interface _PrismaMigrations {
+  applied_steps_count: Generated<number>;
+  checksum: string;
+  finished_at: Timestamp | null;
+  id: string;
+  logs: string | null;
+  migration_name: string;
+  rolled_back_at: Timestamp | null;
+  started_at: Generated<Timestamp>;
+}
+
 export interface DrizzleDrizzleMigrations {
   created_at: Int8 | null;
   hash: string;
   id: Generated<number>;
 }
 
-export interface PostsTable {
-  author_id: string;
-  content: string;
+export interface Post {
+  authorId: number;
   id: Generated<number>;
+  published: Generated<boolean>;
   title: string;
 }
 
-export interface UsersTable {
-  age: string;
-  email: string;
+export interface User {
   id: Generated<number>;
   name: string;
 }
 
 export interface DB {
+  _prisma_migrations: _PrismaMigrations;
   "drizzle.__drizzle_migrations": DrizzleDrizzleMigrations;
-  posts_table: PostsTable;
-  users_table: UsersTable;
+  Post: Post;
+  User: User;
 }

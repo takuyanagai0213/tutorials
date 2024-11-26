@@ -6,7 +6,7 @@ export const runtime = 'edge';
 
 export const GET = async () => {
   const users = await db
-    .selectFrom("users_table")
+    .selectFrom("User")
     .selectAll()
     .execute();
 
