@@ -110,6 +110,49 @@ importers:
         specifier: ^5
         version: 5.7.2
 
+  apps/kysely-tutorial:
+    dependencies:
+      '@vercel/postgres-kysely':
+        specifier: ^0.10.0
+        version: 0.10.0(kysely@0.27.4)
+      next:
+        specifier: 14.2.16
+        version: 14.2.16(@opentelemetry/api@1.4.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react:
+        specifier: ^18
+        version: 18.3.1
+      react-dom:
+        specifier: ^18
+        version: 18.3.1(react@18.3.1)
+    devDependencies:
+      '@types/node':
+        specifier: ^20
+        version: 20.16.5
+      '@types/react':
+        specifier: ^18
+        version: 18.3.1
+      '@types/react-dom':
+        specifier: ^18
+        version: 18.3.1
+      eslint:
+        specifier: ^8
+        version: 8.57.1
+      eslint-config-next:
+        specifier: 14.2.16
+        version: 14.2.16(eslint@8.57.1)(typescript@5.7.2)
+      kysely-codegen:
+        specifier: ^0.17.0
+        version: 0.17.0(kysely@0.27.4)(pg@8.13.1)(tarn@3.0.2)
+      postcss:
+        specifier: ^8
+        version: 8.4.49
+      tailwindcss:
+        specifier: ^3.4.1
+        version: 3.4.15(ts-node@10.9.2(@types/node@20.16.5)(typescript@5.7.2))
+      typescript:
+        specifier: ^5
+        version: 5.7.2
+
   apps/prisma-tutorial:
     dependencies:
       '@neondatabase/serverless':
@@ -1616,6 +1659,12 @@ packages:
 
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
+
+  '@vercel/postgres-kysely@0.10.0':
+    resolution: {integrity: sha512-X1kjLBvjLzE2gdWYSAxFWiRj9SxLYQWZFqIhzNVGG1VqJ8ROxoGiYhPPJrmIC+XACwDuK4SVB0EbFTEcaeO/pQ==}
+    engines: {node: '>=18.14'}
+    peerDependencies:
+      kysely: ^0.24.2 || ^0.25.0 || ^0.26.0 || ^0.27.0
 
   '@vercel/postgres@0.10.0':
     resolution: {integrity: sha512-fSD23DxGND40IzSkXjcFcxr53t3Tiym59Is0jSYIFpG4/0f0KO9SGtcp1sXiebvPaGe7N/tU05cH4yt2S6/IPg==}
@@ -6222,6 +6271,13 @@ snapshots:
       eslint-visitor-keys: 3.4.3
 
   '@ungap/structured-clone@1.2.0': {}
+
+  '@vercel/postgres-kysely@0.10.0(kysely@0.27.4)':
+    dependencies:
+      '@vercel/postgres': 0.10.0
+      kysely: 0.27.4
+    transitivePeerDependencies:
+      - utf-8-validate
 
   '@vercel/postgres@0.10.0':
     dependencies:
