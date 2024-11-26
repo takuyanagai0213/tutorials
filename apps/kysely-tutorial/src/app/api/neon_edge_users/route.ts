@@ -1,4 +1,4 @@
-import { db } from "@/db/vercel_postgres";
+import { db } from "@/db/neon";
 import { NextResponse } from "next/server";
 
 export const dynamic = 'force-dynamic';
