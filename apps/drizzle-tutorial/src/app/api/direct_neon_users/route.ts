@@ -1,4 +1,4 @@
-import { db } from "@/db/neon_index";
+import { db } from "@/db/neon";
 import { usersTable } from "@/db/schema";
 import { NextResponse } from "next/server";
 

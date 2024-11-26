@@ -1,4 +1,4 @@
-import { db } from "@/db";
+import { db } from "@/db/vercel_postgres";
 import { postsTable } from "@/db/schema";
 import { NextResponse } from "next/server";
 
