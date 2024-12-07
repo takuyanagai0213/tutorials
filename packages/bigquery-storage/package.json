@@ -21,6 +21,7 @@
     "typescript": "latest"
   },
   "dependencies": {
-    "@google-cloud/bigquery-storage": "^4.10.1"
+    "@google-cloud/bigquery-storage": "^4.10.1",
+    "avsc": "^5.7.7"
   }
 }

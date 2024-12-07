@@ -28,7 +28,7 @@ export const main = async () => {
     );
 
     const connection = await writerClient.createStreamConnection({
-      streamId: managedwriter.DefaultStream,
+      streamId: managedwriter.,
       destinationTable,
     })
 
