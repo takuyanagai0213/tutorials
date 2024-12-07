@@ -1,0 +1,26 @@
+{
+  "name": "@repo/bigtable",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "exports": {
+    "./add": {
+      "types": "./src/add.ts",
+      "default": "./dist/add.js"
+    },
+    "./subtract": {
+      "types": "./src/subtract.ts",
+      "default": "./dist/subtract.js"
+    }
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "tsx": "^4.19.2",
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "@google-cloud/bigtable": "^5.1.2"
+  }
+}
